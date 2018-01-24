@@ -1,0 +1,75 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "14%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        3,
+        2,
+        3,
+        0
+    ],
+    "_skin_": "s1e656f20ccf410c84f4fa3159befc98",
+    "_text_": "Extra device          +5 CPM\n\nOwned:           Price:",
+    "_top_": {
+        "type": "string",
+        "value": "52%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "75%"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "bottom": "",
+        "centerX": "",
+        "centerY": "",
+        "maxHeight": "",
+        "maxWidth": "",
+        "minHeight": "",
+        "minWidth": "",
+        "right": "",
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "description3",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "e73dfd6387f741eb91109d76bbcdbd9a",
+    "name": "kony.ui.Label",
+    "paddinginpixel": false,
+    "parent": "upgrade",
+    "pf": "upgrade",
+    "texti18n": "upgrade_description3",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

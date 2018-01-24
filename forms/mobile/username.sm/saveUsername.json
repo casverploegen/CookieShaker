@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "119dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s6c9818dbd4243d58e92121ae4bd356c",
+    "_text_": "Save",
+    "_top_": {
+        "type": "string",
+        "value": "408dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "137dp"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s6d73f8be9b144b19587904c9096e650",
+    "id": "saveUsername",
+    "info": null,
+    "isvisible": true,
+    "kuid": "f8a0e718296548398eb98e98456d9d71",
+    "name": "kony.ui.Button",
+    "onclick": "AS_Button_ab1007bd2bfe487094b8a75ee53e1bce",
+    "parent": "username",
+    "pf": "username",
+    "texti18n": "username_save",
+    "wType": "Button",
+    "zindex": 1
+}

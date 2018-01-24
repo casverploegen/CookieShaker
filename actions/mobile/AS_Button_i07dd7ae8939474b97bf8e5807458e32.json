@@ -1,0 +1,24 @@
+{
+    "AS_Button_i07dd7ae8939474b97bf8e5807458e32": {
+        "id": "AS_Button_i07dd7ae8939474b97bf8e5807458e32",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "scoreboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ef608f62269a4563bd66968fe19f6eda"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f5b73d37627d4f0da7dbc91593857a5a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var self = this;\nupdateDataGrid(self);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

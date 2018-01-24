@@ -1,0 +1,58 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s030278094c44a82a90591ebe6723aff",
+    "_text_": "Back",
+    "_top_": {
+        "type": "string",
+        "value": "78.07%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "180dp"
+    },
+    "android": {
+        "psp": {
+            "pressedSkin": "s995d72402144c19bbd92a0d3b0fb587"
+        }
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "49.97%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s3ea0146802c40a8ba80d78262578405",
+    "id": "back",
+    "info": null,
+    "isvisible": true,
+    "kuid": "ff47c69aa9de406caaa02e4e38d5945c",
+    "name": "kony.ui.Button",
+    "onclick": "AS_Button_j8a148dd35fb412ab22304ddfb6416af",
+    "paddinginpixel": false,
+    "parent": "upgrade",
+    "pf": "upgrade",
+    "texti18n": "general_back",
+    "wType": "Button",
+    "zindex": 1
+}

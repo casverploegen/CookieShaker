@@ -1,0 +1,24 @@
+{
+    "AS_Button_ab1007bd2bfe487094b8a75ee53e1bce": {
+        "id": "AS_Button_ab1007bd2bfe487094b8a75ee53e1bce",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "username",
+            "type": "forms",
+            "platform": null,
+            "KUID": "f022266c0fa14570a1c24a3b8008113a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d0116af871cf40c2a004e5ebc95f8b9c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var uniqueUsername = true;\nvar usernameInput = this.view.usernameInput.text;\n\nvar rawData = database.loadData();\nvar n = rawData.length;\nfor (var i = 0; i < n; i++) {\n  var usernameUser = rawData[i].username;\n  if (usernameUser == usernameInput) {\n    uniqueUsername = false;\n  }\n}\n\nif (uniqueUsername && usernameInput != null) {\n  kony.store.setItem(\"username\", usernameInput);\n  database.insertData(usernameInput, score);\n  getUserID();\n  \n  var ntf = new kony.mvc.Navigation(\"scoreboard\");\n  ntf.navigate();\n} else {\n  this.view.errorUsername.setVisibility(true);\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

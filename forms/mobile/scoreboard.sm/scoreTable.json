@@ -1,0 +1,131 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTable",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "no": "",
+            "score": "0",
+            "username": "You"
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "310px"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        2,
+        2,
+        2,
+        2
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "224dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "cellBorder": "3px solid #5C5C5C",
+    "columnheadersconfig": [
+        {
+            "columnContentAlignment": 5,
+            "columnHeaderTemplate": null,
+            "columnHeaderText": "No.",
+            "columnHeaderType": "text",
+            "columnID": "no",
+            "columnOnClick": null,
+            "columnText": "Not Defined",
+            "columnType": "text",
+            "columnWidthInPercentage": 15,
+            "isColumnSortable": false,
+            "kuid": "e2997d44c5484ae897db8600d7d9eb1b"
+        },
+        {
+            "columnContentAlignment": 5,
+            "columnHeaderTemplate": null,
+            "columnHeaderText": "Username",
+            "columnHeaderType": "text",
+            "columnID": "username",
+            "columnOnClick": null,
+            "columnText": "Not Defined",
+            "columnType": "text",
+            "columnWidthInPercentage": 55,
+            "isColumnSortable": false,
+            "kuid": "ge05ab8a9d3f44199e5182cc50c5f956"
+        },
+        {
+            "columnContentAlignment": 5,
+            "columnHeaderTemplate": null,
+            "columnHeaderText": "Score",
+            "columnHeaderType": "text",
+            "columnID": "score",
+            "columnOnClick": null,
+            "columnText": "Not Defined",
+            "columnType": "text",
+            "columnWidthInPercentage": 30,
+            "isColumnSortable": false,
+            "kuid": "eff903f16c5545bbae043d0613db8503"
+        }
+    ],
+    "columnids": [
+        "no",
+        "username",
+        "score"
+    ],
+    "columntype": [
+        "text",
+        "text",
+        "text"
+    ],
+    "containerweight": 100,
+    "contentalignment": 4,
+    "context": {
+        "channel": "mobile",
+        "formID": "scoreboard",
+        "platform": "android",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "counter": "02",
+    "disabledSkins": {
+        "rowAlternateSkin": "sb7cec0c67974af7b6d960f0621698ad"
+    },
+    "focusedindex": null,
+    "focuseditem": null,
+    "gridlinestyle": "solid",
+    "headerskin": "s4ca76e25e2d4365b49e7b05e31533c2",
+    "id": "scoreTable",
+    "info": null,
+    "ismultiselect": false,
+    "isvisible": true,
+    "kuid": "bd26364c2e234039b02f5791024837d0",
+    "name": "kony.ui.DataGrid",
+    "paddinginpixel": false,
+    "parent": "scoreboard",
+    "pf": "scoreboard",
+    "rowcount": 1,
+    "rowfocusskin": "s8617aa03a3245e68df229d0473d8f60",
+    "rownormalskin": "scbc6f51417345ec9b98c2f545323e63",
+    "selectedcellindex": null,
+    "selectedcellitem": null,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditem": null,
+    "selecteditems": null,
+    "showcolumnheaders": true,
+    "wType": "DataGrid",
+    "zindex": 1
+}

@@ -1,0 +1,29 @@
+{
+    "AS_Button_df6922b6412c4337b98637ceea5df997": {
+        "id": "AS_Button_df6922b6412c4337b98637ceea5df997",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "scoreboard",
+            "type": "forms",
+            "platform": null,
+            "KUID": "ef608f62269a4563bd66968fe19f6eda"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___bffdd85743c548f39ebc3cfd851f6ed8",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "home",
+            "formKUID": "b9a02066aec44f97a1fc392629b5775d",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "package": ""
+        }]
+    }
+}

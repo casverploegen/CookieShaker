@@ -1,0 +1,23 @@
+{
+    "AS_Form_c65a5d4b11c34652ae2d2e6419385495": {
+        "id": "AS_Form_c65a5d4b11c34652ae2d2e6419385495",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": null,
+            "KUID": "b1d0d4d3bbe940d69c7bdaf47cf67688"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d90d2eddf7ce464d80c3a1392d7f2fac",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var httpclient = new kony.net.HttpRequest();\n// httpclient.onReadyStateChange = onReady;\n\nhttpclient.open(constants.HTTP_METHOD_GET, \"https://www.google.nl/\");\nhttpclient.send();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

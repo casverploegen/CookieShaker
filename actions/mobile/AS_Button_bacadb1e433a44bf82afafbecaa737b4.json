@@ -1,0 +1,17 @@
+{
+    "AS_Button_bacadb1e433a44bf82afafbecaa737b4": {
+        "id": "AS_Button_bacadb1e433a44bf82afafbecaa737b4",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_onClick_eeab36d1216d4735a736852a5467a669",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if ((cookies >= priceBakery)) {\n  ownedBakery++;\n  cps++;\n  cookies -= priceBakery;\n  priceBakery *= 2;\n  \n  this.view.owned2.text = ownedBakery.toFixed(0);\n  this.view.price2.text = priceBakery.toFixed(0);\n  this.view.error.setVisibility(false);\n} else {\n  this.view.error.setVisibility(true);\n}",
+            "callbackType": null
+        }]
+    }
+}

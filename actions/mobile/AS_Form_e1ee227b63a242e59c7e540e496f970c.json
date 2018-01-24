@@ -1,0 +1,24 @@
+{
+    "AS_Form_e1ee227b63a242e59c7e540e496f970c": {
+        "id": "AS_Form_e1ee227b63a242e59c7e540e496f970c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "username",
+            "type": "forms",
+            "platform": null,
+            "KUID": "f022266c0fa14570a1c24a3b8008113a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__edc391bd8af444e2b04c13bae26a7c85",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if (kony.store.getItem(\"username\") !== null) {\n  var ntf = new kony.mvc.Navigation(\"scoreboard\");\n  ntf.navigate();\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

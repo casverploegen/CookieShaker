@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "13dp"
+    },
+    "_skin_": "s6464aee030442109235cc4489dab0e6",
+    "_text_": "Scoreboard",
+    "_top_": {
+        "type": "string",
+        "value": "83dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "160dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s0a64bf47f494f3db7036d45f57e8519",
+    "id": "Button0d08caf6c03a14b",
+    "info": null,
+    "isvisible": true,
+    "kuid": "cc9cc9d9e8d74d08af22206e615abcc2",
+    "name": "kony.ui.Button",
+    "onclick": "AS_Button_e7d898eed7ae4de0b6a0ccd9eb293707",
+    "parent": "home",
+    "pf": "home",
+    "texti18n": "general_scoreboard",
+    "wType": "Button",
+    "zindex": 1
+}

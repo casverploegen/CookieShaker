@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "14%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_skin_": "s22c0346662c4f83bf39ad6a965b72f2",
+    "_text_": "Buy",
+    "_top_": {
+        "type": "string",
+        "value": "52%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "25%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s604218ca6464d39b62f3bacc0d06ad3",
+    "id": "buy3",
+    "info": null,
+    "isvisible": true,
+    "kuid": "ifba3dc030b944a4b6a46ca47a0da898",
+    "name": "kony.ui.Button",
+    "onclick": "AS_Button_f641edf865b0482b952fab3efba249f0",
+    "parent": "upgrade",
+    "pf": "upgrade",
+    "texti18n": "upgrade_buy",
+    "wType": "Button",
+    "zindex": 1
+}

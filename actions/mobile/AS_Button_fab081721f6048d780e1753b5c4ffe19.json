@@ -1,0 +1,28 @@
+{
+    "AS_Button_fab081721f6048d780e1753b5c4ffe19": {
+        "id": "AS_Button_fab081721f6048d780e1753b5c4ffe19",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "home",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b9a02066aec44f97a1fc392629b5775d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___bf8ea7d044a042f6ad8a1c3b89cac864",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "getPhoto",
+            "display": "getPhoto",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

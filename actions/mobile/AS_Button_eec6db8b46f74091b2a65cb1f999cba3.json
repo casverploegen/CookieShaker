@@ -1,0 +1,17 @@
+{
+    "AS_Button_eec6db8b46f74091b2a65cb1f999cba3": {
+        "id": "AS_Button_eec6db8b46f74091b2a65cb1f999cba3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_onClick_dff1ae38076f4529b50c2d98a439003b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if (cookies >= priceDevice) {\n  ownedDevice++;\n  cpc += 5;\n  cookies -= priceDevice;\n  priceDevice *= 2;\n  \n  this.view.owned3.text = ownedDevice.toFixed(0);\n  this.view.price3.text = priceDevice.toFixed(0);\n  this.view.error.text = \" \"\n} else {\n  this.view.error.text = \"Not enough cookies.\"\n}",
+            "callbackType": null
+        }]
+    }
+}

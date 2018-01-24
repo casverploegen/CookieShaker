@@ -1,0 +1,24 @@
+{
+    "AS_Button_a9054d6a48e547cb9bec7fba8732abea": {
+        "id": "AS_Button_a9054d6a48e547cb9bec7fba8732abea",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "upgrade",
+            "type": "forms",
+            "platform": null,
+            "KUID": "j1684017a7394a1d84e21a4055d0094b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__cfd6e95664414ca3a1d020f8bd9dbc22",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if ((cookies >= priceFinger)) {\n  ownedFinger++;\n  cpc++;\n  cookies -= priceFinger;\n  priceFinger *= 2;\n  \n  this.view.owned1.text = ownedFinger.toFixed(0);\n  this.view.price1.text = priceFinger.toFixed(0);\n  this.view.error.setVisibility(false);\n} else {\n  this.view.error.setVisibility(true);\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "AS_Button_f641edf865b0482b952fab3efba249f0": {
+        "id": "AS_Button_f641edf865b0482b952fab3efba249f0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_onClick_e879689b6d814fb7aa88065d078024bc",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if (cookies >= priceDevice) {\n  ownedDevice++;\n  cpc += 5;\n  cookies -= priceDevice;\n  priceDevice *= 2;\n  \n  this.view.owned3.text = ownedDevice.toFixed(0);\n  this.view.price3.text = priceDevice.toFixed(0);\n  this.view.error.setVisibility(false);\n} else {\n  this.view.error.setVisibility(true);\n}",
+            "callbackType": null
+        }]
+    }
+}

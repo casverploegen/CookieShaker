@@ -1,0 +1,30 @@
+{
+    "AS_Image_f88d6e6cc0b7400eb2112e3d93e4b91c": {
+        "id": "AS_Image_f88d6e6cc0b7400eb2112e3d93e4b91c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "home",
+            "type": "forms",
+            "platform": null,
+            "KUID": "b9a02066aec44f97a1fc392629b5775d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a9b427659e4c43c48b3993ca473ea745",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "count += 1;\nthis.view.label1.text = count.toFixed(0);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

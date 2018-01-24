@@ -1,0 +1,17 @@
+{
+    "AS_Button_ied61f2d675e417fad6281df59884e4e": {
+        "id": "AS_Button_ied61f2d675e417fad6281df59884e4e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_onClick_fd6b3589eb7246898649840be25ec102",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if ((count >= price)) {\n  owned++;\n  increase++;\n  count -= price;\n  price *= 2\n  \n  this.view.owned1.text = owned.toFixed(0);\n  this.view.price1.text = price.toFixed(0);\n} else {\n  this.view.error.text = \"Not enough cookies.\"\n}",
+            "callbackType": null
+        }]
+    }
+}

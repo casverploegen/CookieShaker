@@ -1,0 +1,35 @@
+{
+    "AS_Button_j8a148dd35fb412ab22304ddfb6416af": {
+        "id": "AS_Button_j8a148dd35fb412ab22304ddfb6416af",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "upgrade",
+            "type": "forms",
+            "platform": null,
+            "KUID": "j1684017a7394a1d84e21a4055d0094b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c05645d4ad7d4d689475005c6d3246b1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.view.error.setVisibility(false);",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "NAVIGATE_TO_FORM___g83def7c14074180936d9a4074e97e14",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "home",
+            "formKUID": "b9a02066aec44f97a1fc392629b5775d",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "package": ""
+        }]
+    }
+}

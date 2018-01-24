@@ -1,0 +1,24 @@
+"home_shake"="Schud het apparaat!";
+"home_upgrade"="Waardeer op";
+"general_scoreboard"="Scorebord";
+"home_legenda"="KPB:             KPS:";
+"upgrade_description"="KPB: Koekjes per beweging
+KPS: Koekjes per seconde";
+"upgrade_buy"="Koop";
+"upgrade_description1"="Extra hand             +1 KPB
+
+In bezit:           Prijs:";
+"upgrade_description2"="Bakerij                   +1 KPS
+
+In bezit:           Prijs:";
+"upgrade_description3"="Extra apparaat      +5 KPB
+
+In bezit:           Prijs:";
+"general_back"="Terug";
+"username_promptUsername"="Vul een gebruikersnaam in";
+"username_save"="Opslaan";
+"username_error"="Deze naam is al in gebruik, 
+probeer alstublieft een andere.";
+"scoreboard_refresh"="Ververs";
+"upgrade_error"="Niet genoeg koekjes";
+"username_username"="Gebruikersnaam";

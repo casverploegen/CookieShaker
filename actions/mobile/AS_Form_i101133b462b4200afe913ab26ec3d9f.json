@@ -1,0 +1,24 @@
+{
+    "AS_Form_i101133b462b4200afe913ab26ec3d9f": {
+        "id": "AS_Form_i101133b462b4200afe913ab26ec3d9f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "home",
+            "type": "forms",
+            "platform": null,
+            "KUID": "b9a02066aec44f97a1fc392629b5775d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__g7738f838c304c7aba523284ec1f6152",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.view.cookieCount.text = cookies.toFixed(0);\nthis.view.cpc.text = cpc.toFixed(0);\nthis.view.cps.text = cps.toFixed(0);\n\nstartmonitoringAcc();\nloadCookie();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

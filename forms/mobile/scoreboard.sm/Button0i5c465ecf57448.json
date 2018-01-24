@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "102dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s566241beff54fb9b321df5cfdbf04b7",
+    "_text_": "Refresh",
+    "_top_": {
+        "type": "string",
+        "value": "157dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "180dp"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "scda87a48ce04ec98fa54182eeaa9f14",
+    "id": "Button0i5c465ecf57448",
+    "info": null,
+    "isvisible": true,
+    "kuid": "b5d1efdd03934a979d77dae87d843a6d",
+    "name": "kony.ui.Button",
+    "onclick": "AS_Button_i07dd7ae8939474b97bf8e5807458e32",
+    "parent": "scoreboard",
+    "pf": "scoreboard",
+    "texti18n": "scoreboard_refresh",
+    "wType": "Button",
+    "zindex": 1
+}

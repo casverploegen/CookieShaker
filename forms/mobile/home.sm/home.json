@@ -1,0 +1,105 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizScrollFlexForm",
+    "DNDConfig": null,
+    "_init_": "AS_Form_c1778ebda59f4bbabc8a66c419376ba0",
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s1b29d6940d249e99978179d091aa806",
+    "_title_": null,
+    "addWidgetsdone": false,
+    "allboxes": [],
+    "android": {
+        "psp": {
+            "windowSoftInputMode": 2
+        }
+    },
+    "canUpdateUI": true,
+    "children": [
+        "cookieCount",
+        "cookieIMG",
+        "upgrade",
+        "legenda",
+        "cpc",
+        "cps",
+        "accelOutput",
+        "Button0d08caf6c03a14b",
+        "Label0a9d4fc09075e47",
+        "Button0a04a1783a32f41"
+    ],
+    "containerweight": 100,
+    "controllerInfo": {
+        "default": {
+            "channel": "mobile",
+            "name": "homeController"
+        }
+    },
+    "currentLocale": "nl_NL",
+    "desktopweb": {
+        "needAppMenu": false
+    },
+    "device": "GalaxyS5",
+    "displayorientation": 1,
+    "enabledforidletimeout": false,
+    "id": "home",
+    "info": null,
+    "initdone": false,
+    "inputaccessoryviewtype": 4,
+    "ipad": {
+        "psp": {
+            "inputAccessoryViewType": 4
+        }
+    },
+    "iphone": {
+        "psp": {
+            "inputAccessoryViewType": 4,
+            "titleBarConfig": {
+                "buttonClosureLeftSideView": "",
+                "buttonClosureRightSideView": "",
+                "buttonText": "Edit",
+                "leftButtonText": "Back",
+                "leftTitle": "Back",
+                "prevFormTitle": false,
+                "renderTitleText": true,
+                "rightTitle": "Edit",
+                "titleBarLeftSideView": "button",
+                "titleBarRightSideView": "button",
+                "titleClosureLeftSideView": "",
+                "titleClosureRightSideView": "",
+                "visible": true
+            }
+        },
+        "titleBar": true
+    },
+    "isvisible": true,
+    "kuid": "b9a02066aec44f97a1fc392629b5775d",
+    "layouttype": 2,
+    "name": "kony.ui.Form2",
+    "needappmenu": true,
+    "ondestroy": "AS_Form_c83d25f901a54d33938a78dbc29fe866",
+    "onhide": "AS_Form_db6c7c0a560c4ef1873535341fbefcd5",
+    "paddinginpixel": false,
+    "platform": "android",
+    "preshow": "AS_Form_i101133b462b4200afe913ab26ec3d9f",
+    "prevDevice": "GalaxyS4",
+    "prevPlatform": "winphone8",
+    "retainscrollposition": false,
+    "shellCSS": "and_GalaxyS5",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "titleBarSkin": "sd1847f39bf04eed9e7ba552916afdc1",
+    "titlebar": true,
+    "type": 3,
+    "wType": "Form"
+}

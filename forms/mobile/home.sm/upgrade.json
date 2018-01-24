@@ -1,0 +1,57 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "13dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s030278094c44a82a90591ebe6723aff",
+    "_text_": "Upgrade",
+    "_top_": {
+        "type": "string",
+        "value": "83dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "160dp"
+    },
+    "android": {
+        "psp": {
+            "pressedSkin": "s995d72402144c19bbd92a0d3b0fb587"
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "sf45907cc643484280676284eac5a0cb",
+    "id": "upgrade",
+    "info": null,
+    "isvisible": true,
+    "kuid": "a4d58b9889064e4eba58fd9c2403c103",
+    "name": "kony.ui.Button",
+    "onclick": "AS_Button_ecd3147152264e058db13d4a5ee0b8d4",
+    "parent": "home",
+    "pf": "home",
+    "texti18n": "home_upgrade",
+    "wType": "Button",
+    "zindex": 1
+}

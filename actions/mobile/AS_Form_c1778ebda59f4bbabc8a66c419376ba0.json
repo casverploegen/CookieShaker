@@ -1,0 +1,24 @@
+{
+    "AS_Form_c1778ebda59f4bbabc8a66c419376ba0": {
+        "id": "AS_Form_c1778ebda59f4bbabc8a66c419376ba0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "home",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b9a02066aec44f97a1fc392629b5775d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__j881ca9980bf4e67aaeb86783b828b54",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "// Set up all variables.\ninitVars();\nloadVars();\nsaveVars();\ngetUserID();\n\n// The bakery function is used to add up the cookies that are generated every second by the bakeries. \nfunction bakery() {\n  score += cps;\n  cookies += cps;\n  try {\n    kony.application.getCurrentForm().cookieCount.text = cookies.toFixed(0);\n  } catch (e) {}\n  saveVars(); // All global variables are also saved every second.\n}\n\n// The updateScore function is used to update the scores of the signed in user in the RESTdb.io database.\nfunction updateScore() {\n  var username = kony.store.getItem(\"username\");\n  if (username !== null) {\n    database.updateData(userID, score);\n  }\n}\n\n// Start the timers for the bakery and updateScore.\nkony.timer.schedule(\"cps\", bakery, 1, true); // Every 1 second\nkony.timer.schedule(\"score\", updateScore, 10, true); // Every 10 seconds",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}
