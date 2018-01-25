@@ -1,6 +1,6 @@
-// The database module is written as a module that is closed of from the rest of the app, through making use
-// of a special function syntax, as can be seen below. This way, the variables and function used in this
-// module aren't visible outside the module, which avoids conflicts.
+// The database module is written as a module that is closed of from the rest of the app code, through making use
+// of a special function syntax, as can be seen below. This way, the variables and functions used in this
+// module aren't (directly) visible outside the module, which avoids conflicts.
 // Function of this modules are used in the following way:   database.functionName();
 
 

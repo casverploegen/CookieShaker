@@ -1,8 +1,9 @@
-// The database module is written as a module that is closed of from the rest of the app, through making use
-// of a special function syntax, as can be seen below. This way, the variables and function used in this
-// module aren't visible outside the module, which avoids conflicts.
-// Function of this modules are used in the following way:   database.functionName();
+// The general module is used to store all functions that are used for general purposes in the app, like loading
+// and saving data in the local storage.
 
+
+// The initVars function sets all initial values of the global variables. This is only done when there are no
+// records of these variables in the local storage of the app.
 function initVars() {
   score = 0;
   cookies = 0;
@@ -16,6 +17,8 @@ function initVars() {
   ownedDevice = 0;
 }
 
+// The loadVars function loads in all variables from the local storage of the app, if they are available. This 
+// function is called every time on startup.
 function loadVars() {
   try {
     if (kony.store.getItem("score") !== null) {
@@ -50,6 +53,9 @@ function loadVars() {
     }
   } catch (e) {}
 }
+
+// The saveVars function stores all values of the global variables in the local storage of the app. This function
+// is called every second and when the user closes the app, to make sure no data gets lost.
 function saveVars() {
   try {
     kony.store.setItem("score", score);
@@ -65,10 +71,16 @@ function saveVars() {
   } catch (e) {}
 }
 
+// The getUserID function is used to get the UserID of the signed in user. This value is needed for updating the
+// values in the RESTdb.io database and is stored in the local storage. 
 function getUserID() {
-  if (kony.store.getItem("username") !== null) {
-    var rawData = database.loadData();
-    var usernameSelf = kony.store.getItem("username");
+  if (kony.store.getItem("username") !== null) { // Check whether the user has already made a username, if not,
+    // there also won't be a record of this user in the database and hence no UserID for this user.
+    var rawData = database.loadData(); // Get all data from the database.
+    var usernameSelf = kony.store.getItem("username"); // Get the username of the signed in user
+    
+    // Loop over all data from the database and check whether the username is in there. If a match is found, the
+    // UserID will be retrieved and stored in the UserID global variable.
     for (var i = 0; i < rawData.length; i++) {
       if (rawData[i].username == usernameSelf) {
         userID = rawData[i]._id;
@@ -77,86 +89,38 @@ function getUserID() {
   }
 }
 
+// The updateDataGrid function updates the scoreboard (datagrid) on the scoreboard page. It retrieves all data
+// from the RESTdb.io database and then loops over the data to store all values in a datagrid.
 function updateDataGrid(self) {
-  var usernameSelf = kony.store.getItem("username");
-  self.view.scoreTable.removeAll(); //clear the datagrid
+  var usernameSelf = kony.store.getItem("username"); // Get the username of the signed in user.
+  self.view.scoreTable.removeAll(); // Clear the datagrid
+  // Add the score of the signed in user to the top of the list, so this is easily found.
   self.view.scoreTable.addAll([{no: "", username: usernameSelf, score: score.toFixed(0)}]);
 
+  // Get the data from the database and sort the data based on the score of a user.
   var rawData = database.loadData();
-  var n = rawData.length;
   var sortedData = rawData;
   sortedData.sort(function(a,b) {
-      return b.score - a.score; //sort descending
+      return b.score - a.score; // Sort descending, so the highest scores appear on top of the scoreboard.
   });
 
+  // Loop over all users in the database and store their username and score in the scoreboard datagrid.
+  var n = sortedData.length;
   for (var i = 0; i < n; i++) {
     var usernameUser = sortedData[i].username;
     var scoreUser = parseInt(sortedData[i].score);
+    // IF the username that is about to be added to the datagrid is the username of the signed in user itself,
+    // the row is made bold, to be easy to find and outstanding to the user. This is done by changing the skin
+    // of this row to the 'focus' skin, which I defined to be in bold text.
     if (usernameUser == usernameSelf) {
       self.view.scoreTable.addAll([{no: (i+1).toFixed(0), username: usernameUser, score: score.toFixed(0)}]);
       self.view.scoreTable.applyCellSkin(i+1, "no", "focus");
       self.view.scoreTable.applyCellSkin(i+1, "username", "focus");
       self.view.scoreTable.applyCellSkin(i+1, "score", "focus");
     } else {
+      // Else, just add the rang, username and score to the datagrid.
       self.view.scoreTable.addAll([{no: (i+1).toFixed(0), username: usernameUser, score: scoreUser.toFixed(0)}]);
     }
   }
-  self.view.scoreTable.height = n*70 + 75;
-}
-
-var accXPrev, accYPrev, accZPrev;
-function onsuccesscallbackstartmonitoringAcc(startmonitoringdata) {
-  try {
-    var accX = startmonitoringdata.x;
-    var accY = startmonitoringdata.y;
-    var accZ = startmonitoringdata.z;
-    var difference = 2.5;
-    if (accXPrev !== undefined) {
-      if (accXPrev - accX > difference || accYPrev - accY > difference || accZPrev - accZ > difference) {
-        cookies += cpc;
-        score += cpc;
-        kony.application.getCurrentForm().cookieCount.text = cookies.toFixed(0);
-      }
-    }
-    accXPrev = accX;
-    accYPrev = accY;
-    accZPrev = accZ;
-  } catch (e) {}
-}
-	
-function onfailurecallbackstartmonitoringAcc(error) {
-    alert("Accelerometer is not supported in the device.");
-}
-function startmonitoringAcc() {
-   try {
-      kony.accelerometer.startMonitoringAcceleration(
-         onsuccesscallbackstartmonitoringAcc, 
-         onfailurecallbackstartmonitoringAcc, 
-         {frequency : 150, onChange : false} );                                                                                   
-   }
-   catch (e) {
-//       alert("Accelerometer is not supported.");
-   }
-}
-
-var previousCookie = -1;
-function loadCookie() {
-  var httpclient = new kony.net.HttpRequest();
-  var apikey = 'AIzaSyCCeql_pQbhmb9eczMUOjWS67Q2NEyhBqE'; //google API
-  var cx = '014589101908049751204:c1irh0qfjbs'; //google cx
-  var q = 'cookie'; //search word
-  var url = 'https://www.googleapis.com/customsearch/v1?key='+apikey+'&cx='+cx+'&q='+q+'&searchType=image';
-  httpclient.open(constants.HTTP_METHOD_GET, url, false);
-  
-  try {
-    httpclient.send();
-    var response = httpclient.response;
-//     alert(response.items);
-    var i = -1;
-    do {
-    	i = Math.floor(Math.random() * 10);
-    } while (i == previousCookie);
-    previousCookie = i;
-    kony.application.getCurrentForm().cookieIMG.src = response.items[i].link;
-  } catch (err) {alert('Error while loading cookies: ' + err);}
+  self.view.scoreTable.height = n*70 + 75; // Increase the size of the datagrid based on the number of users.
 }
